@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>window.$ = window.jQuery = require('./assets/js/jquery.min.js')</script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/mine.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="blue-grey darken-1">
+    <div id="loader" class="preloader-wrapper big active loader">
+        <div class="spinner-layer spinner-yellow-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div id="internet-connection">
+        <div class="container">
+            <h1 style="color: white;">Sorry,</h1>
+            <p style="color: white;">There's NO interent connection. Please, check your interent!</p>
+            <a style="margin: 0 !important" onclick="remote.getCurrentWindow().reload()" class="waves-effect btn-flat white">reload</a>
+        </div>
+    </div>
+    <div id="ajax-error">
+        <div class="container">
+            <h1 style="color: white;">Server error,</h1>
+            <p style="color: white;">An error has occurred with the server. Try to reload or try later.</p>
+            <p id="error-msg" style="color: white;"></p>
+            <a style="margin: 0 !important" onclick="remote.getCurrentWindow().reload()" class="waves-effect btn-flat white">reload</a>
+        </div>
+    </div>
+    <div style="height: 100%;" class="container" id="container">
+        <div class="row">
+            <div class="col s12">
+                <nav>
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field blue-grey lighten-2">
+                                <input placeholder="Search for games.." id="searchInput" type="search" title="Type in a game" onkeyup="searchInGames()" required
+                                    autofocus>
+                                <label class="label-icon" for="search">
+                                    <i class="material-icons">search</i>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div id="myCollection">
+            </div>
+        </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./server/request_data.js"></script>
+    <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/js/index_behavior.js"></script>
+    <script type="text/javascript" src="./analytics.js"></script>
+
+    <script>
+        function openDownloadsPage() {
+            const { shell } = require('electron')
+            shell.openExternal('https://ping-master.com/index.html#download')
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "pingmaster",
+  "productName": "PING Master",
+  "version": "1.2.0",
+  "description": "Simple application that lets people check their PING before entering a game. It supports and include most popular games.",
+  "main": "main.js",
+  "author": "Abbas Al-Eid",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.16.3",
+    "is-online": "^7.0.0",
+    "timer-stopwatch": "^0.2.0"
+  },
+  "devDependencies": {
+    "electron": "^4.0.4"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itealover/ping-test-master.git"
+  }
+}

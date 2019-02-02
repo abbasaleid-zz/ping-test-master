@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+</head>
+
+<body class="blue-grey darken-1">
+    <style>
+        :not(input):not(textarea),
+        :not(input):not(textarea)::after,
+        :not(input):not(textarea)::before {
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .card {
+            margin-top: 5%;
+        }
+    </style>
+    <div class="container">
+        <div class="card">
+            <div class="card-content white-text">
+                <span style="color: black" class="card-title">About us</span>
+                <p style="color: black">This application has been developed by
+                    <b>Abbas Al-Eid</b>. A Computer Science student who love online video games.</p>
+            </div>
+            <div class="card-action">
+                <a href="mailto:info@ping-master.com" target="_top">Email us</a>
+                <a onclick="openWebsite()" href="#" target="_top">Visit Our Website</a>
+            </div>
+        </div>
+    </div>
+
+    <script>window.$ = window.jQuery = require('./assets/js/jquery.min.js')</script>
+    <script>
+        const { shell } = require('electron')
+        const electron = require('electron')
+        const remote = require('electron').remote
+        const clientID = remote.getGlobal('clientID')
+        const Analytics = require('electron-google-analytics')
+        const analytics = new Analytics.default('UA-120224782-1')
+        analytics.set('uid', clientID)
+        function openWebsite() {
+            shell.openExternal('https://ping-master.com')
+        }
+
+        $(document).ready(function () {
+            return analytics.screen(remote.getGlobal('appName'), remote.getGlobal('appVersion'), null, null, 'aboutWindow.html')
+                .then((response) => {
+                    return response;
+                }).catch((err) => {
+                    return err;
+                })
+        })
+
+
+    </script>
+</body>
+
+</html>
