@@ -6,7 +6,7 @@ PING Test Master is tool used to check the user ping for selected games. It make
 Screenshots:
 
 The interface
-<center><img alt="PING Test Master Interface" src="https://i.imgur.com/LSdARby.png" data-canonical-src="https://i.imgur.com/LSdARby.png" width="400" height="585" /></center>
+<img style="display:block; margin-left:auto; margin-right:auto;" alt="PING Test Master Interface" src="https://i.imgur.com/LSdARby.png" data-canonical-src="https://i.imgur.com/LSdARby.png" width="400" height="585"/>
 
 PING Windpws (to a League of Legends server)
 <img alt="PING Test Master PING Window featuring League of Legends" src="https://i.imgur.com/TwvlP35.jpg" data-canonical-src="https://i.imgur.com/TwvlP35.jpg" width="683" height="383" />
