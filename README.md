@@ -1,15 +1,15 @@
 # ping-test-master
-![PING Test Master Logo](https://i.imgur.com/Oo3nLW7.png)
+<img alt="PING Test Master Logo" src="https://i.imgur.com/Oo3nLW7.png" data-canonical-src="https://i.imgur.com/Oo3nLW7.png" width="400" height="585" />
 
 PING Test Master is tool used to check the user ping for selected games. It make use of the child process and the 'ping' command for each operating system.
 
 Screenshots:
 
 The interface
-<img src="https://i.imgur.com/LSdARby.png" data-canonical-src="https://i.imgur.com/LSdARby.png" width="250" height="250" />
-![PING Test Master Interface](https://i.imgur.com/LSdARby.png =250x250)
+<img alt="PING Test Master Interface" src="https://i.imgur.com/LSdARby.png" data-canonical-src="https://i.imgur.com/LSdARby.png" width="400" height="585" />
 
 PING Windpws (to a League of Legends server)
+<img alt="PING Test Master PING Window featuring League of Legends" src="https://i.imgur.com/TwvlP35.jpg" data-canonical-src="https://i.imgur.com/TwvlP35.jpg" width="683" height="383" />
 ![PING Test Master PING Window featuring League of Legends](https://i.imgur.com/TwvlP35.jpg =400x585)
 
 
@@ -17,7 +17,7 @@ PING Windpws (to a League of Legends server)
 It is avaiable via Windows Store at the moment. If you want to run it on other operating systems you do so by cloning this project and compiling it using Electron.js. Keep in mind that you will have to modify the child process ping command to match the operating system that you wish to run it on.
 
 ### Windows Store App
-You can get it here: [PING Test Master](https://www.microsoft.com/store/apps/9MVL4MVZK4WF =683x384).
+You can get it here: [PING Test Master](https://www.microsoft.com/store/apps/9MVL4MVZK4WF).
 
 ## Cloning the app
 To clone the app and get started you must install Node and npm (if you already have them, then do not worry). After cloning the app, run the terminal and navigate to the app directory, then run ‘npm install’. This will download the necessary files to run the app. After the process finishes, run ’npm start’ and the app should run normally.
