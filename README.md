@@ -1,4 +1,4 @@
-![alt text](https://imgur.com/Oo3nLW7 "PING Test Master Logo")
+![PING Test Master Logo](https://i.imgur.com/Oo3nLW7.png)
 # ping-test-master
 PING Test Master is tool used to check the user ping for selected games. It make use of the child process and the 'ping' command for each operating system.
 
