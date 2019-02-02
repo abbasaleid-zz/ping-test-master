@@ -1,6 +1,16 @@
 # ping-test-master
 ![PING Test Master Logo](https://i.imgur.com/Oo3nLW7.png)
+
 PING Test Master is tool used to check the user ping for selected games. It make use of the child process and the 'ping' command for each operating system.
+
+Screenshots:
+
+The interface
+![PING Test Master Interface](https://i.imgur.com/LSdARby.png)
+
+PING Windpws (to a League of Legends server)
+![PING Test Master PING Window featuring League of Legends](https://i.imgur.com/LSdARby.png)
+
 
 ## How you can get it?
 It is avaiable via Windows Store at the moment. If you want to run it on other operating systems you do so by cloning this project and compiling it using Electron.js. Keep in mind that you will have to modify the child process ping command to match the operating system that you wish to run it on.
