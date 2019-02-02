@@ -6,3 +6,6 @@ It is avaiable via Windows Store at the moment. If you want to run it on other o
 
 ### Windows Store App
 You can get it here: [PING Test Master](https://www.microsoft.com/store/apps/9MVL4MVZK4WF).
+
+## Cloning the app
+To clone the app and get started you must install Node and npm (if you already have them, then do not worry). After cloning the app, run the terminal and navigate to the app directory, then run ‘npm install’. This will download the necessary files to run the app. After the process finishes, run ’npm start’ and the app should run normally.
