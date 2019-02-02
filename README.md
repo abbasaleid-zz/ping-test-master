@@ -1,12 +1,12 @@
 # ping-test-master
-<img alt="PING Test Master Logo" src="https://i.imgur.com/Oo3nLW7.png" data-canonical-src="https://i.imgur.com/Oo3nLW7.png" width="400" height="585" />
+<img alt="PING Test Master Logo" src="https://i.imgur.com/Oo3nLW7.png" data-canonical-src="https://i.imgur.com/Oo3nLW7.png" width="250" height="250" />
 
 PING Test Master is tool used to check the user ping for selected games. It make use of the child process and the 'ping' command for each operating system.
 
 Screenshots:
 
 The interface
-<img alt="PING Test Master Interface" src="https://i.imgur.com/LSdARby.png" data-canonical-src="https://i.imgur.com/LSdARby.png" width="400" height="585" />
+<center><img alt="PING Test Master Interface" src="https://i.imgur.com/LSdARby.png" data-canonical-src="https://i.imgur.com/LSdARby.png" width="400" height="585" /></center>
 
 PING Windpws (to a League of Legends server)
 <img alt="PING Test Master PING Window featuring League of Legends" src="https://i.imgur.com/TwvlP35.jpg" data-canonical-src="https://i.imgur.com/TwvlP35.jpg" width="683" height="383" />
