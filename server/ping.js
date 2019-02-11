@@ -17,8 +17,7 @@ app.get('/ping', function (req, res) {
     }
     // determine the current platform
     // excute proper command based on platform
-    exec(`for /F "tokens=7 delims== " %G in ('ping -n 1 ${ip}^|findstr /i "TTL="') do @echo %G`, puts)
-    //exec(`ping -c 1 ${ip} | tail -1| awk '{print $4}' | cut -d '/' -f 2`, puts)
+    exec(`ping -c 1 ${ip} | tail -1| awk '{print $4}' | cut -d '/' -f 2`, puts)
 })
 
 app.listen(port, function () {
